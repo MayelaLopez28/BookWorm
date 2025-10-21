@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
-import{searchGoogleBooks} from "../services/google_books_service";
-import{Book} from "../models/book.model";
+import{searchGoogleBooks} from "../../services/google_books_service";
+import{Book} from "../../models/book.model";
 import{IonContent,IonHeader,IonPage,IonTitle,IonLabel,IonToolbar,IonSearchbar,IonList,IonItem,IonButton,IonIcon} from "@ionic/react";
 import{search} from 'ionicons/icons';
-import './Home.css';
+import './Search.css';
 
 const Home: React.FC=()=>{
     const [searchResults, setSearchResults]= useState<Book[]>([]);
@@ -24,7 +24,7 @@ const Home: React.FC=()=>{
         <IonPage>
             <IonHeader className="header-bg">
                 <IonToolbar color="transparent">
-                    <IonTitle style={{color: '#FFDCE8'}}>BookWorm Search</IonTitle>
+                    <IonTitle style={{color: '#FFDCE8'}}>BookWorm</IonTitle>
                 </IonToolbar>
             </IonHeader>
 
