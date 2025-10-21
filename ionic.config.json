@@ -1,0 +1,7 @@
+{
+  "name": "BookWorm",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
